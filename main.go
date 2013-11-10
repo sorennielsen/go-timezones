@@ -38,5 +38,5 @@ func main() {
 
 	fmt.Printf("%11s %v\n%11s %v\n%11s %v.\n", "Period from", from, "to", to, "in", location)
 	fmt.Printf("Notice offset. Daylight saving time means that %v can be either %v or %v.\n", location, from.Format("-0700"), to.Format("-0700"))
-	fmt.Printf("In UTC this is from '%v' to '%v' which is useful for querying databases that stores dates in UTC.\n", from.UTC(), to.UTC())
+	fmt.Printf("In UTC these dates are from '%v' to '%v' which is useful for querying databases that stores dates in UTC.\n", from.UTC(), to.UTC())
 }
